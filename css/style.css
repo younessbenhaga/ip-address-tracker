@@ -1,0 +1,170 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.back {
+    background-image: url('/images/pattern-bg-desktop.png');
+    background-position:center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+   
+    display: flex; /* Use flexbox to center horizontally */
+    align-items: center;
+    flex-direction: column; /* Align content vertically */
+    z-index: 1;
+    position: absolute;
+}
+p{
+    font-size: 27px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+.contain{
+    display: flex;
+}
+
+input{
+    height: 44px;
+    width: 400px;
+    font-size: 18px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    
+}
+input:focus{
+    border: none;
+}
+
+button{
+    border: none;
+    height: 46px;
+    width: 43px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: black;
+    cursor: pointer;
+
+}
+
+
+
+.box{
+   border-right: 0.5px solid gray;
+
+    height: 120px;
+    width: 50%;
+    
+    padding: 10px;  
+    display: block;
+    
+    
+}
+#ip , #location,#time,#utc{
+    padding-left: 5%;
+    font-size: large;
+    height: max-content;
+    width: 100%;
+    color: hsl(0, 0%, 17%);
+    margin-top: 30px; 
+    
+}
+span{
+   
+    color: hsl(0, 0%, 59%)
+}
+.information {
+   
+    height: max-content;
+    width: 80%;
+    background: white;
+    border-radius: 10px;
+    
+    margin-top: 20px;
+    display: flex;
+    z-index: 1;
+   
+    
+}
+
+
+
+#map{
+    height: 74vh;
+    width: 100%;
+   
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+}
+
+@media (max-width:871px) {
+    .information{
+        width: max-content;
+ 
+    }
+}
+@media (max-width:375px) {
+    
+    .back{
+        background-image: url('/images/pattern-bg-mobile.png'); 
+        
+    }
+    .attribution{
+        left: 20px;
+    }
+    }
+@media (max-width:711px) {
+    p{
+       
+        font-size: 17px;
+    }
+   
+    input{
+        width: 200px;
+        height: 40px;
+    }
+    button{
+        height: 43px;
+    }
+    .information{
+        display: block;
+    }
+    .box{
+       width: 300px;
+       height: 60px;
+    }
+    #ip , #location,#time,#utc{
+        margin-top: 10px;
+        height: max-content;
+        font-size: 17px;
+        width: 60%;
+    }
+    span{
+        font-size: 13px;
+    }
+    .map{
+        height: 600px;
+    }
+    .attribution{
+        left: 20%;
+    }
+
+}
+

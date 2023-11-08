@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>IP Address Tracker</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;position: fixed;bottom: 0px; left: 40%; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body >
+  <div class="back">
+    <p><strong>IP Address Tracker</strong></p>
+
+
+
+    <div class="contain">
+    <input type="text" id="input">
+    <button id="btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button></div>
+
+
+    <div class="information">
+
+      <div class="box">
+        <span>IP Address :</span><br>
+        <div id="ip">---.---.---.---</div>
+      </div>
+
+      <div class="box">
+        <span>Location :</span><br>
+        <div id="location">--</div>
+      </div>
+
+      <div class="box">
+        <span>Timezone :</span><br>
+        <div id="time">--</div>
+      </div>
+
+      <div class="box">
+        <span>UTC :</span><br>
+        <div id="utc">--</div>
+      </div>
+    </div>
+
+  </div >
+  
+  
+  <div class="map" id="map"> </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/younes-benhaga-121794297/">YOUNES BENHAGA</a>.
+  </div>
+  <script src="./js/javascript.js"></script>
+</body>
+</html>
